@@ -9,6 +9,9 @@ app.use(cors())
 
 //ROUTES
 
+//register and login
+
+app.use("/auth", require("./routes/jwtAuth"));
 
 app.listen(5000, () => {
   console.log("Server is starting")
